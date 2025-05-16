@@ -396,7 +396,7 @@ void draw_mouse()
             input_method_changed.store(true);
         }
 
-        std::vector<int> baud_rate_list = { 9600, 19200, 38400, 57600, 115200 };
+        std::vector<int> baud_rate_list = { 9600, 19200, 38400, 57600, 115200, 400000 };
         std::vector<std::string> baud_rate_str_list;
         for (const auto& rate : baud_rate_list)
         {
@@ -495,7 +495,7 @@ void draw_mouse()
             input_method_changed.store(true);
         }
 
-        std::vector<int> baud_list = { 9600, 19200, 38400, 57600, 115200 };
+        std::vector<int> baud_list = { 9600, 19200, 38400, 57600, 115200, 400000 };
         std::vector<std::string> baud_str_list;
         for (int b : baud_list) baud_str_list.push_back(std::to_string(b));
         std::vector<const char*> baud_items;
